@@ -18,43 +18,52 @@
             background-color: var(--bg-color);
             color: var(--text-primary);
             margin: 0;
-            padding: 15px;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        /* رأس الصفحة الثابت في الأعلى */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            max-width: 480px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 15px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        header h1 {
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            margin: 0 0 4px 0;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.3;
         }
 
         .container {
             width: 100%;
             max-width: 480px;
             background: var(--card-bg);
-            border-radius: 20px;
+            border-radius: 0 0 20px 20px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             padding: 20px;
             box-sizing: border-box;
             margin-bottom: 20px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-        }
-
-        header h1 {
-            font-size: 1.3rem;
-            letter-spacing: 0.5px;
-            margin: 0 0 8px 0;
-            color: var(--text-primary);
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin: 0;
-            line-height: 1.4;
         }
 
         .main-look {
@@ -116,53 +125,54 @@
 </head>
 <body>
 
-    <div class="container">
-        <!-- عنوان الموقع -->
-        <header>
-            <h1>Styled by Bayan</h1>
-            <p>Chic Olive & Gold Elegant Summer Dress Outfit Featuring Sophisticated Style</p>
-        </header>
+    <!-- العنوان الثابت في الأعلى -->
+    <header>
+        <h1>Styled by Bayan</h1>
+        <p>Chic Olive & Gold Elegant Summer Dress Outfit</p>
+    </header>
 
+    <div class="container">
         <!-- صورة التنسيق الكاملة في الأعلى -->
         <div class="main-look">
-            <!-- استبدلي الرابط التالي برابط صورة التنسيق الشاملة -->
-            <img src="[url=https://ibb.co/XfpGr6TP][img]https://i.ibb.co/8n2QLGVw/IMG-20260724-135232-307.jpg[/img][/url]" alt="Full Outfit Look">
-        </div>
+            <!-- تم وضع رابط صورتكِ الأولى هنا -->
+            <img src="https://i.ibb.co/XfpGr6TP/IMG-20260724-135232-307.jpg" alt="Full Outfit Look">
+            </div>
         
-        <!-- شبكة القطع المنفردة -->
+        <!-- شبكة القطع المنفردة (بدون أسماء) -->
         <div class="grid-items">
-            <!-- القطعة 1: الحقيبة -->
+            <!-- القطعة 1 -->
             <div class="item-card">
-                <img src="رابط_صورة_الحقيبة" alt="Bag">
+                <img src="رابط_صورة_الحقيبة" alt="Item">
                 <a href="رابط_أفيلييت_الحقيبة" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
             </div>
-            <!-- القطعة 2: الفستان -->
+
+            <!-- القطعة 2 -->
             <div class="item-card">
-                <img src="رابط_صورة_الفستان" alt="Dress">
+                <img src="رابط_صورة_الفستان" alt="Item">
                 <a href="رابط_أفيلييت_الفستان" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
             </div>
 
-            <!-- القطعة 3: الحذاء -->
+            <!-- القطعة 3 -->
             <div class="item-card">
-                <img src="رابط_صورة_الحذاء" alt="Shoes">
+                <img src="رابط_صورة_الحذاء" alt="Item">
                 <a href="رابط_أفيلييت_الحذاء" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
             </div>
 
-            <!-- القطعة 4: الساعة -->
+            <!-- القطعة 4 -->
             <div class="item-card">
-                <img src="رابط_صورة_الساعة" alt="Watch">
+                <img src="رابط_صورة_الساعة" alt="Item">
                 <a href="رابط_أفيلييت_الساعة" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
             </div>
 
-            <!-- القطعة 5: الخاتم -->
+            <!-- القطعة 5 -->
             <div class="item-card">
-                <img src="رابط_صورة_الخاتم" alt="Ring">
+                <img src="رابط_صورة_الخاتم" alt="Item">
                 <a href="رابط_أفيلييت_الخاتم" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
             </div>
 
-            <!-- القطعة 6: الحلق -->
+            <!-- القطعة 6 -->
             <div class="item-card">
-                <img src="رابط_صورة_الحلق" alt="Earrings">
+                <img src="رابط_صورة_الحلق" alt="Item">
                 <a href="رابط_أفيلييت_الحلق" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
             </div>
         </div>
