@@ -1,94 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled by Bayan | Outfit Inspo</title>
+    <title>Styled by Bayan</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
-            color: #1a1a1a;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* العنوان الثابت في الأعلى */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            width: 100%;
-            background: #ffffff;
             text-align: center;
-            border-bottom: 1px solid #e0e0e0;
-            padding: 12px 15px;
-            box-sizing: border-box;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+            color: #333;
         }
 
-        header h1 {
-            font-size: 1.3rem;
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1 {
+            font-size: 24px;
             margin: 0;
-            color: #1a1a1a;
-            font-weight: 700;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 480px;
-            background: #ffffff;
-            border-radius: 0 0 20px 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            padding: 0; /* تم إزالة الحشوة لكي تلصق الصورة بالحواف تماماً وتختفي الفراغات */
-            box-sizing: border-box;
-            margin-bottom: 20px;
-            overflow: hidden; /* لضمان عدم خروج الصورة عن الحواف ودائرتها */
+            letter-spacing: 1px;
+            color: #111;
         }
 
         .outfit-description {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #555555;
-            margin: 15px 15px 20px 15px;
-            line-height: 1.4;
-            font-weight: 500;
+            font-size: 13px;
+            color: #555;
+            margin: 12px auto 20px auto;
+            max-width: 90%;
+            line-height: 1.5;
+            font-weight: normal;
         }
 
-        .main-look {
-            margin-bottom: 20px;
-            text-align: center;
-            width: 100%;
+        .main-image-container {
+            padding: 0 15px;
+            margin-bottom: 25px;
         }
 
-        /* الصورة الكبيرة تملأ عرض المربع تماماً وبدون أي أخطاء */
-        .main-look img {
+        .main-image {
             width: 100%;
-            height: auto;
+            max-width: 450px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
             display: block;
-            margin: 0;
-            border-radius: 0;
+            margin: 0 auto;
         }
 
-        .grid-section {
-            padding: 0 15px 20px 15px;
-        }
-
-        .grid-items {
+        .grid-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 0 15px 30px 15px;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
         .item-card {
             background: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 14px;
-            padding: 12px;
-            text-align: center;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -96,24 +71,25 @@
 
         .item-card img {
             width: 100%;
-            height: 150px;
-            object-fit: contain;
-            margin-bottom: 12px;
+            height: auto;
             border-radius: 8px;
+            object-fit: cover;
         }
 
         .shop-btn {
-            background-color: #000000;
-            color: #ffffff;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #111;
+            color: #fff;
             text-decoration: none;
             padding: 8px 10px;
-            border-radius: 8px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
+            font-size: 12px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .shop-btn:hover {
+            background-color: #333;
         }
     </style>
 </head>
@@ -121,58 +97,34 @@
 
     <header>
         <h1>Styled by Bayan</h1>
+        
+        <!-- ========================================== -->
+        <!-- 💡 مكاني هنا: ضعي وصف التنسيق الجديد الخاص بكِ هنا -->
+        <!-- ========================================== -->
+        <div class="Chic Olive & Gold Elegant Summer Dress
+Outfit<br>Featuring Sophisticated Style">
+            اكتبِ وصف التنسيق هنا بكل حرية، ويمكنكِ استخدام &lt;br&gt; لنزول السطر
+        </div>
+
     </header>
 
-    <div class="container">
-        <div class="outfit-description">
-            Chic Olive & Gold Elegant Summer Dress Outfit Featuring Sophisticated Style
+    <!-- الصورة الكبيرة -->
+    <div class="main-image-container">
+        <img src="https://i.ibb.co/zcdTNYD/IMG-20260725-174837-753.jpg" alt="Outfit Inspo" class="main-image">
+    </div>
+
+    <!-- القطع الفردية -->
+    <div class="grid-container">
+        <!-- القطعة الأولى (اليمين) -->
+        <div class="item-card">
+            <img src="رابط_صورة_القطعة_الأولى" alt="Item 1">
+            <a href="رابط_أفيلييت_القطعة_الأولى" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
         </div>
 
-        <!-- صورة التنسيق الكبيرة (جاهزة ومضبوطة بالرابط الصحيح) -->
-        <div class="main-look">
-            <img src="https://i.ibb.co/8LHndV6c/IMG-20260724-135232-307.jpg" alt="">
-        </div>
-        
-        <div class="grid-section">
-            <!-- القطع المنفردة -->
-            <div class="grid-items">
-                <!-- القطعة الأولى -->
-                <div class="item-card">
-                    <img src="https://i.ibb.co/jCSmXyP/IMG-20260725-171356-606.jpg" alt="">
-                    <a href="هنا_رابط_أفيلييت_القطعة_1" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
-                </div>
-
-                <!-- القطعة الثانية -->
-                <div class="item-card">
-                    <img src="https://i.ibb.co/d4Mpz24x/IMG-20260725-163507-340.jpg" alt="">
-                    <a href="هنا_رابط_أفيلييت_القطعة_2" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
-                </div>
-
-                <!-- القطعة الثالثة -->
-                <div class="item-card">
-                    <img src="https://i.ibb.co/Df1Z0H74/IMG-20260725-171356-620.jpg" alt="">
-                    <a href="هنا_رابط_أفيلييت_القطعة_3" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
-                </div>
-
-                <!-- القطعة الرابعة -->
-                <div class="item-card">
-                    <img src="هنا_رابط_صورة_القطعة_4" alt="">
-                    <a href="هنا_رابط_أفيلييت_القطعة_4" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
-                </div>
-
-                <!-- القطعة الخامسة -->
-                <div class="item-card">
-                    <img src="هنا_رابط_صورة_القطعة_5" alt="">
-                    <a href="هنا_رابط_صورة_القطعة_5" alt="">
-                    <a href="هنا_رابط_أفيلييت_القطعة_5" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
-                </div>
-
-                <!-- القطعة السادسة -->
-                <div class="item-card">
-                    <img src="هنا_رابط_صورة_القطعة_6" alt="">
-                    <a href="هنا_رابط_أفيلييت_القطعة_6" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
-                </div>
-            </div>
+        <!-- القطعة الثانية (اليسار) -->
+        <div class="item-card">
+            <img src="رابط_صورة_القطعة_الثانية" alt="Item 2">
+            <a href="رابط_أفيلييت_القطعة_الثانية" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
         </div>
     </div>
 
