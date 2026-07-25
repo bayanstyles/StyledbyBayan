@@ -2,9 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Styled by Bayan</title>
     <style>
+        /* 1. تنسيق عام للصفحة مع ترك مساحة في الأعلى لكي لا يختفي المحتوى تحت العنوان الثابت */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
@@ -12,48 +13,59 @@
             padding: 0;
             text-align: center;
             color: #333;
+            padding-top: 95px; /* مساحة لثبات الهيدر */
         }
 
+        /* 2. العنوان الرئيسي الثابت تماماً عند تحريك الشاشة */
         header {
+            position: fixed; /* يجعله ثابتاً لا يتحرك */
+            top: 0;
+            left: 0;
+            width: 100%;
             background-color: #ffffff;
-            padding: 20px;
+            padding: 12px 0;
             border-bottom: 1px solid #ddd;
+            z-index: 1000; /* ليبقى دائماً في الواجهة فوق الصور */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 22px;
             margin: 0;
             letter-spacing: 1px;
             color: #111;
         }
 
+        /* 3. تنسيق الوصف المرتب تحت العنوان الثابت */
         .outfit-description {
             font-size: 13px;
             color: #555;
-            margin: 12px auto 20px auto;
-            max-width: 90%;
-            line-height: 1.5;
+            margin: 6px auto 0 auto;
+            max-width: 85%;
+            line-height: 1.4;
             font-weight: normal;
         }
 
+        /* 4. تنسيق الصورة الرئيسية بفراغ من الجانبين وتدوير للأطراف */
         .main-image-container {
-            padding: 0 15px;
-            margin-bottom: 25px;
+            padding: 0 20px; /* الفراغ من الجانبين */
+            margin: 20px auto;
+            max-width: 500px;
         }
 
         .main-image {
             width: 100%;
-            max-width: 450px;
+            height: auto;
             border-radius: 16px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             display: block;
-            margin: 0 auto;
         }
 
+        /* 5. شبكة الـ 6 قطع الفردية */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+            gap: 12px;
             padding: 0 15px 30px 15px;
             max-width: 500px;
             margin: 0 auto;
@@ -67,25 +79,37 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            text-align: right;
         }
 
         .item-card img {
             width: 100%;
-            height: auto;
-            border-radius: 8px;
+            height: 150px;
             object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .item-title {
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: bold;
         }
 
+        /* 6. زر الشراء */
         .shop-btn {
-            display: inline-block;
-            margin-top: 10px;
+            display: block;
+            width: 100%;
             background-color: #111;
             color: #fff;
             text-decoration: none;
-            padding: 8px 10px;
+            padding: 8px 0;
             font-size: 12px;
             border-radius: 6px;
             transition: background 0.2s;
+            box-sizing: border-box;
+            text-align: center;
         }
 
         .shop-btn:hover {
@@ -95,57 +119,63 @@
 </head>
 <body>
 
+    <!-- الهيدر الثابت في الأعلى (يبقى ظاهراً دائماً) -->
     <header>
         <h1>Styled by Bayan</h1>
-        
-        <!-- مكاني هنا: اكتبي وصف التنسيق واستخدمي <br> لنزول السطر -->
         <div class="outfit-description">
+            <!-- ضعي وصف التنسيق هنا واשתخدمي <br> لنزول السطر -->
             Chic Olive & Gold Elegant Summer Dress<br>Outfit Featuring Sophisticated Style
         </div>
     </header>
 
-    <!-- الصورة الكبيرة -->
+    <!-- الصورة الرئيسية بفراغ من الجانبين -->
     <div class="main-image-container">
-        <img src="https://i.ibb.co/zcdTNYD/IMG-20260725-174837-753.jpg" alt="Outfit Inspo" class="main-image">
+        <img src="رابط_الصورة_الكبيرة_الجديدة" alt="Outfit Inspo" class="main-image">
     </div>
 
-    <!-- شبكة القطع الستة الفردية -->
+    <!-- شبكة الـ 6 قطع الفردية -->
     <div class="grid-container">
         
-        <!-- القطعة الأولى -->
+        <!-- القطعة 1 -->
         <div class="item-card">
+            <div class="item-title">Item 1</div>
             <img src="رابط_صورة_القطعة_1" alt="Item 1">
-            <a href="رابط_أفيلييت_القطعة_1" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            <a href="رابط_أفيلييت_القطعة_1" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
         </div>
 
-        <!-- القطعة الثانية -->
+        <!-- القطعة 2 -->
         <div class="item-card">
+            <div class="item-title">Item 2</div>
             <img src="رابط_صورة_القطعة_2" alt="Item 2">
-            <a href="رابط_أفيلييت_القطعة_2" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            <a href="رابط_أفيلييت_القطعة_2" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
         </div>
 
-        <!-- القطعة الثالثة -->
+        <!-- القطعة 3 -->
         <div class="item-card">
+            <div class="item-title">Item 3</div>
             <img src="رابط_صورة_القطعة_3" alt="Item 3">
-            <a href="رابط_أفيلييت_القطعة_3" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            <a href="رابط_أفيلييت_القطعة_3" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
         </div>
 
-        <!-- القطعة الرابعة -->
+        <!-- القطعة 4 -->
         <div class="item-card">
+            <div class="item-title">Item 4</div>
             <img src="رابط_صورة_القطعة_4" alt="Item 4">
-            <a href="رابط_أفيلييت_القطعة_4" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            <a href="رابط_أفيلييت_القطعة_4" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
         </div>
 
-        <!-- القطعة الخامسة -->
+        <!-- القطعة 5 -->
         <div class="item-card">
+            <div class="item-title">Item 5</div>
             <img src="رابط_صورة_القطعة_5" alt="Item 5">
-            <a href="رابط_أفيلييت_القطعة_5" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            <a href="رابط_أفيلييت_القطعة_5" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
         </div>
 
-        <!-- القطعة السادسة -->
+        <!-- القطعة 6 -->
         <div class="item-card">
+            <div class="item-title">Item 6</div>
             <img src="رابط_صورة_القطعة_6" alt="Item 6">
-            <a href="رابط_أفيلييت_القطعة_6" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            <a href="رابط_أفيلييت_القطعة_6" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
         </div>
 
     </div>
