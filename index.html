@@ -5,51 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Styled by Bayan</title>
     <style>
-        /* 1. تنسيق عام للصفحة مع ترك مساحة في الأعلى لكي لا يختفي المحتوى تحت العنوان الثابت */
+        /* 1. تنسيق عام للصفحة */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             text-align: center;
             color: #333;
-            padding-top: 95px; /* مساحة لثبات الهيدر */
         }
 
-        /* 2. العنوان الرئيسي الثابت تماماً عند تحريك الشاشة */
+        /* 2. عنوان "Styled by Bayan" يتحرك مع الشاشة بشكل طبيعي */
         header {
-            position: fixed; /* يجعله ثابتاً لا يتحرك */
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #ffffff;
-            padding: 12px 0;
-            border-bottom: 1px solid #ddd;
-            z-index: 1000; /* ليبقى دائماً في الواجهة فوق الصور */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            background-color: transparent;
+            padding: 10px 0 15px 0;
         }
 
         h1 {
-            font-size: 22px;
+            font-size: 24px;
             margin: 0;
             letter-spacing: 1px;
             color: #111;
         }
 
-        /* 3. تنسيق الوصف المرتب تحت العنوان الثابت */
+        /* 3. تنسيق الوصف (يتحرك مع الصفحة) */
         .outfit-description {
             font-size: 13px;
             color: #555;
-            margin: 6px auto 0 auto;
+            margin: 10px auto 20px auto;
             max-width: 85%;
             line-height: 1.4;
             font-weight: normal;
         }
 
-        /* 4. تنسيق الصورة الرئيسية بفراغ من الجانبين وتدوير للأطراف */
+        /* 4. تنسيق الصورة الرئيسية بفراغ من الجانبين وتدوير الأطراف */
         .main-image-container {
-            padding: 0 20px; /* الفراغ من الجانبين */
-            margin: 20px auto;
+            padding: 0 20px;
+            margin: 0 auto 25px auto;
             max-width: 500px;
         }
 
@@ -119,14 +111,16 @@
 </head>
 <body>
 
-    <!-- الهيدر الثابت في الأعلى (يبقى ظاهراً دائماً) -->
+    <!-- عنوان Styled by Bayan (يتحرك ويصعد مع الشاشة) -->
     <header>
         <h1>Styled by Bayan</h1>
-        <div class="outfit-description">
-            <!-- ضعي وصف التنسيق هنا واשתخدمي <br> لنزول السطر -->
-            Chic Olive & Gold Elegant Summer Dress<br>Outfit Featuring Sophisticated Style
-        </div>
     </header>
+
+    <!-- الوصف (قالب قابل للتعبئة) -->
+    <div class="outfit-description">
+        <!-- 💡 ضعي وصف التنسيق هنا واستخدمي <br> لنزول السطر -->
+        Chic Olive & Gold Elegant Summer Dress<br>Outfit Featuring Sophisticated Style
+    </div>
 
     <!-- الصورة الرئيسية بفراغ من الجانبين -->
     <div class="main-image-container">
