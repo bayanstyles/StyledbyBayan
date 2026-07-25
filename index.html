@@ -1,166 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled by Bayan | Outfit Inspo</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #555555;
+            --border-color: #e0e0e0;
+        }
 
-<title>Styled by Bayan</title>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #faf7f2;
-    color: #333;
-}
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
 
-header {
-    position: sticky;
-    top: 0;
-    background: #faf7f2;
-    padding: 18px;
-    text-align: center;
-    font-size: 24px;
-    letter-spacing: 2px;
-    border-bottom: 1px solid #ddd;
-    z-index: 100;
-}
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 25px;
-    text-align: center;
-}
+        header h1 {
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+            margin: 0 0 8px 0;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
 
-h1 {
-    font-size: 28px;
-    margin-top: 20px;
-}
+        header p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.4;
+        }
 
-.description {
-    line-height: 1.8;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
+        .main-look {
+            margin-bottom: 25px;
+            text-align: center;
+        }
 
-.main-look {
-    width: 100%;
-    border-radius: 12px;
-}
+        .main-look img {
+            width: 100%;
+            border-radius: 14px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
 
-.shop-title {
-    margin-top: 40px;
-    font-size: 22px;
-}
+        .grid-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
 
-.items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 25px;
-}
+        .item-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 12px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
 
-.item {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
+        .item-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 12px;
+        }
 
-.item a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
+        .shop-btn {
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 10px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: background 0.2s;
+        }
 
-.item img {
-    width: 100%;
-    display: block;
-}
-
-.item-name {
-    padding: 12px;
-    font-size: 16px;
-}
-
-.shop-button {
-    padding: 12px;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-@media (max-width: 600px) {
-    .items {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-}
-</style>
-
+        .shop-btn:hover {
+            background-color: #333333;
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-Styled by Bayan
-</header>
+    <div class="container">
+        <!-- عنوان الموقع -->
+        <header>
+            <h1>Styled by Bayan</h1>
+            <p>Chic Olive & Gold Elegant Summer Dress Outfit Featuring Sophisticated Style</p>
+        </header>
 
-<div class="container">
+        <!-- صورة التنسيق الكاملة في الأعلى -->
+        <div class="main-look">
+            <!-- استبدلي الرابط التالي برابط صورة التنسيق الشاملة -->
+            <img src="[url=https://ibb.co/XfpGr6TP][img]https://i.ibb.co/8n2QLGVw/IMG-20260724-135232-307.jpg[/img][/url]" alt="Full Outfit Look">
+        </div>
+        
+        <!-- شبكة القطع المنفردة -->
+        <div class="grid-items">
+            <!-- القطعة 1: الحقيبة -->
+            <div class="item-card">
+                <img src="رابط_صورة_الحقيبة" alt="Bag">
+                <a href="رابط_أفيلييت_الحقيبة" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            </div>
+            <!-- القطعة 2: الفستان -->
+            <div class="item-card">
+                <img src="رابط_صورة_الفستان" alt="Dress">
+                <a href="رابط_أفيلييت_الفستان" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            </div>
 
-<h1>Elegant Summer Look</h1>
+            <!-- القطعة 3: الحذاء -->
+            <div class="item-card">
+                <img src="رابط_صورة_الحذاء" alt="Shoes">
+                <a href="رابط_أفيلييت_الحذاء" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            </div>
 
-<p class="description">
-A feminine and timeless outfit carefully selected to create an elegant everyday style.
-</p>
+            <!-- القطعة 4: الساعة -->
+            <div class="item-card">
+                <img src="رابط_صورة_الساعة" alt="Watch">
+                <a href="رابط_أفيلييت_الساعة" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            </div>
 
-<img class="main-look" src="images/look1.jpg" alt="Full Look">
+            <!-- القطعة 5: الخاتم -->
+            <div class="item-card">
+                <img src="رابط_صورة_الخاتم" alt="Ring">
+                <a href="رابط_أفيلييت_الخاتم" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            </div>
 
-<h2 class="shop-title">Shop The Look</h2>
-
-
-<div class="items">
-
-
-<div class="item">
-<a href="YOUR-SHEIN-AFFILIATE-LINK">
-<img src="images/pants.jpg" alt="Pants">
-<div class="item-name">Elegant Pants</div>
-<div class="shop-button">Shop on Shein</div>
-</a>
-</div>
-
-
-<div class="item">
-<a href="YOUR-SHEIN-AFFILIATE-LINK">
-<img src="images/top.jpg" alt="Top">
-<div class="item-name">Stylish Top</div>
-<div class="shop-button">Shop on Shein</div>
-</a>
-</div>
-
-
-<div class="item">
-<a href="YOUR-SHEIN-AFFILIATE-LINK">
-<img src="images/shoes.jpg" alt="Shoes">
-<div class="item-name">Shoes</div>
-<div class="shop-button">Shop on Shein</div>
-</a>
-</div>
-
-
-<div class="item">
-<a href="YOUR-SHEIN-AFFILIATE-LINK">
-<img src="images/bag.jpg" alt="Bag">
-<div class="item-name">Bag</div>
-<div class="shop-button">Shop on Shein</div>
-</a>
-</div>
-
-
-</div>
-
-</div>
+            <!-- القطعة 6: الحلق -->
+            <div class="item-card">
+                <img src="رابط_صورة_الحلق" alt="Earrings">
+                <a href="رابط_أفيلييت_الحلق" target="_blank" class="shop-btn">🛒 Shop on Shein</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
