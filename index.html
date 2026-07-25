@@ -1,178 +1,318 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Styled by Bayan</title>
-    <style>
-        /* 1. تنسيق عام للصفحة */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px 0;
-            text-align: center;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        /* 2. عنوان "Styled by Bayan" يتحرك مع الشاشة بشكل طبيعي */
-        header {
-            background-color: transparent;
-            padding: 10px 0 15px 0;
-        }
+<title>Styled by Bayan</title>
 
-        h1 {
-            font-size: 24px;
-            margin: 0;
-            letter-spacing: 1px;
-            color: #111;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        /* 3. تنسيق الوصف (يتحرك مع الصفحة) */
-        .outfit-description {
-            font-size: 13px;
-            color: #555;
-            margin: 10px auto 20px auto;
-            max-width: 85%;
-            line-height: 1.4;
-            font-weight: normal;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-        /* 4. تنسيق الصورة الرئيسية بفراغ من الجانبين وتدوير الأطراف */
-        .main-image-container {
-            padding: 0 20px;
-            margin: 0 auto 25px auto;
-            max-width: 500px;
-        }
+<style>
 
-        .main-image {
-            width: 100%;
-            height: auto;
-            border-radius: 16px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            display: block;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-        /* 5. شبكة الـ 6 قطع الفردية */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            padding: 0 15px 30px 15px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
+body{
 
-        .item-card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: right;
-        }
+background:#f7f5f2;
 
-        .item-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 8px;
-        }
-        
-        .item-title {
-            font-size: 13px;
-            color: #333;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
+font-family:'Inter',sans-serif;
 
-        /* 6. زر الشراء */
-        .shop-btn {
-            display: block;
-            width: 100%;
-            background-color: #111;
-            color: #fff;
-            text-decoration: none;
-            padding: 8px 0;
-            font-size: 12px;
-            border-radius: 6px;
-            transition: background 0.2s;
-            box-sizing: border-box;
-            text-align: center;
-        }
+color:#2d2d2d;
 
-        .shop-btn:hover {
-            background-color: #333;
-        }
-    </style>
+line-height:1.6;
+
+}
+
+/*==========================
+HEADER
+==========================*/
+
+header{
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+background:#f7f5f2;
+
+padding:18px 20px;
+
+text-align:center;
+
+border-bottom:1px solid #ece8e2;
+
+}
+
+header h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:36px;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+}
+
+/*==========================
+MAIN CONTAINER
+==========================*/
+
+.container{
+
+max-width:700px;
+
+margin:auto;
+
+padding:28px 18px 70px;
+
+}
+
+/*==========================
+LOOK DESCRIPTION
+==========================*/
+
+.look-description{
+
+font-size:16px;
+
+text-align:center;
+
+color:#555;
+
+margin-bottom:28px;
+
+}
+
+/*==========================
+MAIN LOOK IMAGE
+==========================*/
+
+.hero-image{
+
+width:100%;
+
+border-radius:26px;
+
+overflow:hidden;
+
+background:white;
+
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+margin-bottom:28px;
+
+}
+
+.hero-image img{
+
+width:100%;
+
+display:block;
+
+}
+
+/*==========================
+PRODUCT GRID
+==========================*/
+
+.products{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:18px;
+
+}
+
+.product{
+
+display:block;
+
+text-decoration:none;
+
+background:white;
+
+border-radius:24px;
+
+overflow:hidden;
+
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+transition:.25s;
+
+}
+
+.product:hover{
+
+transform:translateY(-4px);
+
+}
+
+.product img{
+
+width:100%;
+
+display:block;
+
+background:white;
+
+}/*==========================
+SHOP BUTTON
+==========================*/
+
+.shop-btn{
+
+display:block;
+
+margin:16px;
+
+padding:14px;
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+border-radius:14px;
+
+font-size:16px;
+
+font-weight:500;
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+
+text-align:center;
+
+padding:40px 0 10px;
+
+font-size:14px;
+
+color:#8c8c8c;
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <!-- عنوان Styled by Bayan (يتحرك ويصعد مع الشاشة) -->
-    <header>
-        <h1>Styled by Bayan</h1>
-    </header>
+<header>
 
-    <!-- الوصف (قالب قابل للتعبئة) -->
-    <div class="outfit-description">
-        <!-- 💡 ضعي وصف التنسيق هنا واستخدمي <br> لنزول السطر -->
-        Chic Olive & Gold Elegant Summer Dress<br>Outfit Featuring Sophisticated Style
-    </div>
+<h1>Styled by Bayan</h1>
 
-    <!-- الصورة الرئيسية بفراغ من الجانبين -->
-    <div class="main-image-container">
-        <img src="رابط_الصورة_الكبيرة_الجديدة" alt="Outfit Inspo" class="main-image">
-    </div>
+</header>
 
-    <!-- شبكة الـ 6 قطع الفردية -->
-    <div class="grid-container">
-        
-        <!-- القطعة 1 -->
-        <div class="item-card">
-            <div class="item-title">Item 1</div>
-            <img src="رابط_صورة_القطعة_1" alt="Item 1">
-            <a href="رابط_أفيلييت_القطعة_1" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
-        </div>
+<div class="container">
 
-        <!-- القطعة 2 -->
-        <div class="item-card">
-            <div class="item-title">Item 2</div>
-            <img src="رابط_صورة_القطعة_2" alt="Item 2">
-            <a href="رابط_أفيلييت_القطعة_2" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
-        </div>
+<!-- ✏️ EDIT LOOK DESCRIPTION HERE -->
 
-        <!-- القطعة 3 -->
-        <div class="item-card">
-            <div class="item-title">Item 3</div>
-            <img src="رابط_صورة_القطعة_3" alt="Item 3">
-            <a href="رابط_أفيلييت_القطعة_3" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
-        </div>
+<p class="look-description">
 
-        <!-- القطعة 4 -->
-        <div class="item-card">
-            <div class="item-title">Item 4</div>
-            <img src="رابط_صورة_القطعة_4" alt="Item 4">
-            <a href="رابط_أفيلييت_القطعة_4" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
-        </div>
+Write your outfit description here. Replace this text with your own style description.
 
-        <!-- القطعة 5 -->
-        <div class="item-card">
-            <div class="item-title">Item 5</div>
-            <img src="رابط_صورة_القطعة_5" alt="Item 5">
-            <a href="رابط_أفيلييت_القطعة_5" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
-        </div>
+</p>
 
-        <!-- القطعة 6 -->
-        <div class="item-card">
-            <div class="item-title">Item 6</div>
-            <img src="رابط_صورة_القطعة_6" alt="Item 6">
-            <a href="رابط_أفيلييت_القطعة_6" target="_blank" class="shop-btn">Shop on Shein 🛒</a>
-        </div>
+<!-- 🖼️ MAIN LOOK IMAGE -->
 
-    </div>
+<div class="hero-image">
+
+<img src="images/look.jpg" alt="Main Look">
+
+</div>
+
+<div class="products">
+
+<!-- ===== ITEM 1 ===== -->
+
+<a class="product" href="YOUR_SHEIN_LINK_1">
+
+<img src="images/item1.jpg" alt="Item 1">
+
+<div class="shop-btn">🛒 Shop on Shein</div>
+
+</a>
+
+<!-- ===== ITEM 2 ===== -->
+
+<a class="product" href="YOUR_SHEIN_LINK_2">
+
+<img src="images/item2.jpg" alt="Item 2">
+
+<div class="shop-btn">🛒 Shop on Shein</div>
+
+</a>
+
+<!-- ===== ITEM 3 ===== -->
+
+<a class="product" href="YOUR_SHEIN_LINK_3">
+
+<img src="images/item3.jpg" alt="Item 3">
+
+<div class="shop-btn">🛒 Shop on Shein</div>
+
+</a>
+
+<!-- ===== ITEM 4 ===== -->
+
+<a class="product" href="YOUR_SHEIN_LINK_4">
+
+<img src="images/item4.jpg" alt="Item 4">
+
+<div class="shop-btn">🛒 Shop on Shein</div>
+
+</a>
+
+<!-- ===== ITEM 5 ===== -->
+
+<a class="product" href="YOUR_SHEIN_LINK_5">
+
+<img src="images/item5.jpg" alt="Item 5">
+
+<div class="shop-btn">🛒 Shop on Shein</div>
+
+</a>
+
+<!-- ===== ITEM 6 ===== -->
+
+<a class="product" href="YOUR_SHEIN_LINK_6">
+
+<img src="images/item6.jpg" alt="Item 6">
+
+<div class="shop-btn">🛒 Shop on Shein</div>
+
+</a>
+
+</div>
+
+<footer>
+
+Styled by Bayan ©
+
+</footer>
+
+</div>
 
 </body>
+
 </html>
