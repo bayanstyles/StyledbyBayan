@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Styled by Bayan</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
@@ -19,21 +23,25 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 
-background:#f7f5f2;
+background:#FCFCFA;
 
 font-family:'Inter',sans-serif;
 
 color:#2d2d2d;
 
-line-height:1.6;
+line-height:1.7;
 
 }
 
-/*==========================
+/*========================
 HEADER
-==========================*/
+========================*/
 
 header{
 
@@ -43,75 +51,79 @@ top:0;
 
 z-index:999;
 
-background:#f7f5f2;
+background:#FCFCFA;
 
-padding:18px 20px;
+padding:10px 22px;
 
-text-align:center;
-
-border-bottom:1px solid #ece8e2;
+border-bottom:1px solid #F1F1ED;
 
 }
 
 header h1{
 
+text-align:center;
+
 font-family:'Cormorant Garamond',serif;
 
-font-size:36px;
+font-size:29px;
 
 font-weight:600;
 
-letter-spacing:1px;
+letter-spacing:.8px;
+
+color:#1f1f1f;
 
 }
 
-/*==========================
+/*========================
 MAIN CONTAINER
-==========================*/
+========================*/
 
 .container{
 
-max-width:700px;
+max-width:720px;
 
 margin:auto;
 
-padding:28px 18px 70px;
+padding:26px 18px 70px;
 
 }
 
-/*==========================
+/*========================
 LOOK DESCRIPTION
-==========================*/
+========================*/
 
 .look-description{
 
-font-size:16px;
+font-size:15px;
+
+font-weight:400;
 
 text-align:center;
 
-color:#555;
+color:#6b6b6b;
 
-margin-bottom:28px;
+margin-bottom:26px;
+
+padding:0 8px;
 
 }
 
-/*==========================
+/*========================
 MAIN LOOK IMAGE
-==========================*/
+========================*/
 
 .hero-image{
 
-width:100%;
+background:#ffffff;
 
 border-radius:26px;
 
 overflow:hidden;
 
-background:white;
+box-shadow:0 5px 18px rgba(0,0,0,.04);
 
-box-shadow:0 10px 30px rgba(0,0,0,.06);
-
-margin-bottom:28px;
+margin-bottom:24px;
 
 }
 
@@ -121,17 +133,19 @@ width:100%;
 
 display:block;
 
+object-fit:cover;
+
 }
 
-/*==========================
+/*========================
 PRODUCT GRID
-==========================*/
+========================*/
 
 .products{
 
 display:grid;
 
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(2,1fr);
 
 gap:18px;
 
@@ -139,25 +153,27 @@ gap:18px;
 
 .product{
 
-display:block;
+display:flex;
+
+flex-direction:column;
 
 text-decoration:none;
 
-background:white;
+background:#ffffff;
 
-border-radius:24px;
+border-radius:22px;
 
 overflow:hidden;
 
-box-shadow:0 8px 20px rgba(0,0,0,.05);
+box-shadow:0 5px 18px rgba(0,0,0,.05);
 
-transition:.25s;
+transition:.25s ease;
 
 }
 
-.product:hover{
+.product:active{
 
-transform:translateY(-4px);
+transform:scale(.98);
 
 }
 
@@ -165,39 +181,45 @@ transform:translateY(-4px);
 
 width:100%;
 
+aspect-ratio:1/1;
+
+object-fit:cover;
+
 display:block;
 
-background:white;
+background:#ffffff;
 
-}/*==========================
+}/*========================
 SHOP BUTTON
-==========================*/
+========================*/
 
 .shop-btn{
 
-display:block;
+width:78%;
 
-margin:16px;
+margin:14px auto 16px;
 
-padding:14px;
+padding:10px 0;
 
-background:#111;
+background:#111111;
 
-color:white;
+color:#ffffff;
 
 text-align:center;
 
-border-radius:14px;
-
-font-size:16px;
+font-size:13px;
 
 font-weight:500;
 
+border-radius:12px;
+
+letter-spacing:.2px;
+
 }
 
-/*==========================
+/*========================
 FOOTER
-==========================*/
+========================*/
 
 footer{
 
@@ -205,9 +227,9 @@ text-align:center;
 
 padding:40px 0 10px;
 
-font-size:14px;
+font-size:13px;
 
-color:#8c8c8c;
+color:#9b9b9b;
 
 }
 
@@ -225,12 +247,12 @@ color:#8c8c8c;
 
 <div class="container">
 
-<!-- ✏️ EDIT LOOK DESCRIPTION HERE -->
+<!-- ✏️ EDIT DESCRIPTION HERE -->
 
 <p class="Chic Olive & Gold Elegant Summer Dress<br>Outfit Featuring Sophisticated Style
 ">
 
-Write your outfit description here. Replace this text with your own style description.
+Write your outfit description here.
 
 </p>
 
@@ -238,7 +260,7 @@ Write your outfit description here. Replace this text with your own style descri
 
 <div class="hero-image">
 
-<img src="https://i.ibb.co/27c1LHdh/IMG-20260725-174837-661.jpg" alt="Main Look">
+<img src="https://i.ibb.co/zcdTNYD/IMG-20260725-174837-753.jpg" alt="Main Look">
 
 </div>
 
@@ -246,61 +268,61 @@ Write your outfit description here. Replace this text with your own style descri
 
 <!-- ===== ITEM 1 ===== -->
 
-<a class="product" href="YOUR_SHEIN_LINK_1">
+<a class="product" href="YOUR_AFFILIATE_LINK_1">
 
-<img src="https://i.ibb.co/d4Mpz24x/IMG-20260725-163507-340.jpg" alt="Item 1">
+<img src="images/item1.jpg" alt="Item 1">
 
-<div class="shop-btn">🛒 Shop on Shein</div>
+<div class="shop-btn">Shop on Shein</div>
 
 </a>
 
 <!-- ===== ITEM 2 ===== -->
 
-<a class="product" href="YOUR_SHEIN_LINK_2">
+<a class="product" href="YOUR_AFFILIATE_LINK_2">
 
 <img src="images/item2.jpg" alt="Item 2">
 
-<div class="shop-btn">🛒 Shop on Shein</div>
+<div class="shop-btn">Shop on Shein</div>
 
 </a>
 
 <!-- ===== ITEM 3 ===== -->
 
-<a class="product" href="YOUR_SHEIN_LINK_3">
+<a class="product" href="YOUR_AFFILIATE_LINK_3">
 
 <img src="images/item3.jpg" alt="Item 3">
 
-<div class="shop-btn">🛒 Shop on Shein</div>
+<div class="shop-btn">Shop on Shein</div>
 
 </a>
 
 <!-- ===== ITEM 4 ===== -->
 
-<a class="product" href="YOUR_SHEIN_LINK_4">
+<a class="product" href="YOUR_AFFILIATE_LINK_4">
 
 <img src="images/item4.jpg" alt="Item 4">
 
-<div class="shop-btn">🛒 Shop on Shein</div>
+<div class="shop-btn">Shop on Shein</div>
 
 </a>
 
 <!-- ===== ITEM 5 ===== -->
 
-<a class="product" href="YOUR_SHEIN_LINK_5">
+<a class="product" href="YOUR_AFFILIATE_LINK_5">
 
 <img src="images/item5.jpg" alt="Item 5">
 
-<div class="shop-btn">🛒 Shop on Shein</div>
+<div class="shop-btn">Shop on Shein</div>
 
 </a>
 
 <!-- ===== ITEM 6 ===== -->
 
-<a class="product" href="YOUR_SHEIN_LINK_6">
+<a class="product" href="YOUR_AFFILIATE_LINK_6">
 
 <img src="images/item6.jpg" alt="Item 6">
 
-<div class="shop-btn">🛒 Shop on Shein</div>
+<div class="shop-btn">Shop on Shein</div>
 
 </a>
 
