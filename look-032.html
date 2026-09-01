@@ -1,0 +1,214 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>BAYAN STYLING</title>  
+<link rel="preconnect" href="https://fonts.googleapis.com">  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">  
+<style>  
+  
+*{  
+margin:0;  
+padding:0;  
+box-sizing:border-box;  
+}  
+  
+html{  
+scroll-behavior:smooth;  
+}  
+  
+body{  
+background:#FCFCFA;  
+font-family:'Inter',sans-serif;  
+color:#2d2d2d;  
+line-height:1.7;  
+}  
+  
+/*========================  
+HEADER  
+========================*/  
+  
+header{  
+position:sticky;  
+top:0;  
+z-index:999;  
+background:#FCFCFA;  
+padding:10px 22px;  
+border-bottom:1px solid #F1F1ED;  
+}  
+  
+header h1{  
+text-align:center;  
+font-family:'Cormorant Garamond',serif;  
+font-size:29px;  
+font-weight:600;  
+letter-spacing:.8px;  
+color:#1f1f1f;  
+}  
+  
+/*========================  
+MAIN CONTAINER  
+========================*/  
+  
+.container{  
+max-width:720px;  
+margin:auto;  
+padding:26px 18px 70px;  
+}  
+  
+/*========================  
+LOOK DESCRIPTION  
+========================*/  
+  
+.look-description{  
+font-size:15px;  
+font-weight:400;  
+text-align:center;  
+color:#6b6b6b;  
+margin-bottom:26px;  
+padding:0 8px;  
+}  
+  
+/*========================  
+MAIN LOOK IMAGE  
+========================*/  
+  
+.hero-image{  
+background:#ffffff;  
+border-radius:26px;  
+overflow:hidden;  
+box-shadow:0 5px 18px rgba(0,0,0,.04);  
+margin-bottom:24px;  
+}  
+  
+.hero-image img{  
+width:100%;  
+display:block;  
+object-fit:cover;  
+}  
+  
+/*========================  
+PRODUCT GRID  
+========================*/  
+  
+.products{  
+display:grid;  
+grid-template-columns:repeat(2,1fr);  
+gap:18px;  
+}  
+  
+.product{  
+display:flex;  
+flex-direction:column;  
+text-decoration:none;  
+background:#ffffff;  
+border-radius:22px;  
+overflow:hidden;  
+box-shadow:0 5px 18px rgba(0,0,0,.05);  
+transition:.25s ease;  
+}  
+  
+.product:active{  
+transform:scale(.98);  
+}  
+  
+.product img{  
+width:100%;  
+aspect-ratio:1/1;  
+object-fit:cover;  
+display:block;  
+background:#ffffff;  
+}  
+
+/*========================  
+SHOP BUTTON  
+========================*/  
+  
+.shop-btn{  
+width:78%;  
+margin:14px auto 16px;  
+padding:10px 0;  
+background:#111111;  
+color:#ffffff;  
+text-align:center;  
+font-size:13px;  
+font-weight:500;  
+border-radius:12px;  
+letter-spacing:.2px;  
+}  
+  
+/*========================  
+FOOTER  
+========================*/  
+  
+footer{  
+text-align:center;  
+padding:40px 0 10px;  
+font-size:13px;  
+color:#9b9b9b;  
+}  
+  
+</style>  
+</head>  
+<body>  
+<header>  
+<h1>BAYAN STYLING</h1>  
+</header>  
+<div class="container">  
+<!-- ✏️ EDIT DESCRIPTION HERE -->  
+<p class="look-description">  
+Bohemian Embroidered Halter Top & Brown Cardigan<br>Outfit Featuring Linen Shorts & Boho Chic Style
+</p>  
+
+<!-- 🖼️ MAIN LOOK IMAGE -->  
+<div class="hero-image">  
+<img src="https://i.ibb.co/v6LLxRzJ/file-0000000029ac8211a2663e0b1b03a5e2.png" alt="Main Look">  
+</div>  
+
+<div class="products">  
+<!-- ===== ITEM 1 ===== -->  
+<a class="product" href="https://amzn.to/4x1HlX0">  
+<img src="https://i.ibb.co/4gJNHbY0/1788271061381.jpg" alt="Item 1">  
+<div class="shop-btn">Shop on Amazon🛒</div>  
+</a>  
+
+<!-- ===== ITEM 2 ===== -->  
+<a class="product" href="https://amzn.to/4gHT0UV">  
+<img src="https://i.ibb.co/XkKVdzWH/1788272480025-1.jpg" alt="Item 2">  
+<div class="shop-btn">Shop on Amazon🛒</div>  
+</a>  
+
+<!-- ===== ITEM 3 ===== -->  
+<a class="product" href="https://amzn.to/4cWPHIj">  
+<img src="https://i.ibb.co/JWTtGPXt/Screenshot-20260901-170147-Amazon-Shopping-1.jpg" alt="Item 3">  
+<div class="shop-btn">Shop on Amazon🛒</div>  
+</a>  
+
+<!-- ===== ITEM 4 ===== -->  
+<a class="product" href="https://amzn.to/4zVwfFY">  
+<img src="https://i.ibb.co/4RfG1QsR/Screenshot-20260901-110450-Amazon-Shopping.jpg" alt="Item 4">  
+<div class="shop-btn">Shop on Amazon🛒</div>  
+</a>  
+
+<!-- ===== ITEM 5 ===== -->  
+<a class="product" href="https://amzn.to/3UwczrR">  
+<img src="https://i.ibb.co/DDwNBCxr/Photoroom-20260901-173621172.jpg" alt="Item 5">  
+<div class="shop-btn">Shop on Amazon🛒</div>  
+</a>  
+
+<!-- ===== ITEM 6 ===== -->  
+<a class="product" href="https://amzn.to/4i6Nw8t">  
+<img src="https://i.ibb.co/S4t2VJth/Screenshot-20260901-113002-Amazon-Shopping.jpg" alt="Item 6">  
+<div class="shop-btn">Shop on Amazon🛒</div>  
+</a>  
+</div>  
+
+<footer>  
+BAYAN STYLING ©  
+</footer>  
+</div>  
+</body>  
+</html>
+
